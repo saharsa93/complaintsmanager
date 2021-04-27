@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Signal-Tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/complaintsmanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/complaintsmanager/Signal-Tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/complaintsmanager/signaltracking-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/signaltracking-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/usercomplaints" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/usercomplaints/complaintsmanager" vcs="Git" />
+  </component>
+</project>

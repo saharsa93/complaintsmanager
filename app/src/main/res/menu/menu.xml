@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="Profile"
+            android:id="@+id/action_profile"
+            />
+        <item
+            android:title="Track Complaints"
+            android:id="@+id/action_track"
+            />
+        <item
+            android:title="Submitted Complaints"
+            android:id="@+id/action_submitted"
+            />
+        <item
+            android:title="Settings"
+            android:id="@+id/action_settings"
+            />
+        <item
+            android:title="Contact us"
+            android:id="@+id/action_contact"
+            />
+    </group>
+</menu>

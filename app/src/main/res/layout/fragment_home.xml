@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/user_wellcome_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorTextSubtitle"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/user_wellcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/add_phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_add"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="330dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yourLocation_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Current Location:"
+        app:layout_constraintTop_toBottomOf="@id/user_wellcome_lay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mapcontainer"
+    app:layout_constraintTop_toBottomOf="@id/yourLocation_tv">
+
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".HomeFragment"
+    android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mapcontainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Submit a new Complaint"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
